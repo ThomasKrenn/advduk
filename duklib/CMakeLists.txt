@@ -31,6 +31,8 @@ PRIVATE
 target_compile_definitions(${DUK_LIB}
  PRIVATE 
   DUK_LIB_LIB
+  "$<$<CONFIG:DEBUG>:DUK_USE_DEBUG>"
+
   "$<$<PLATFORM_ID:Windows>:_SBCS>"
   "$<$<PLATFORM_ID:Windows>:WIN32>"
   "$<$<PLATFORM_ID:Windows>:WIN64>"

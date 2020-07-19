@@ -20,11 +20,27 @@ target_include_directories( ${DUKMODAPP}
 target_sources(${DUKMODAPP}
 PRIVATE
 
-   dukmodapp.h
+   dukmod_js.cpp
+   dukmod_js.h
+   
+   dukmod_native.cpp
+   dukmod_native.h
+   
    dukmodapp.cpp
+   dukmodapp.h
 
-   mydukmod.cpp   
-   mydukmod.h
+   
+   dukmod_js.cpp
+   dukmod_js.h
+   
+   glue_ctx.cpp
+   glue_ctx.h
+   
+   glue_mod.cpp   
+   glue_mod.h
+   
+   glue_dbg.cpp
+   glue_dbg.h   
 )
 
 ##
