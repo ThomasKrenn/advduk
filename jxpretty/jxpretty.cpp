@@ -1,5 +1,10 @@
 /*
  *  Pretty print JSON from stdin into indented JX.
+ *
+ * https://github.com/svaarala/duktape/blob/master/doc/json.rst
+ *
+ * For example, Duktape.enc('JC', data) is equivalent to JSON.format(data, false) except 
+ * for the representation of functions. Using the JX encoding will omit unnecessary quotings.
  */
 
 #include <stdio.h>
